@@ -1,0 +1,169 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"
+      integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">
+        <div class="container my-5 mx-auto">
+          <form class="change-location my-4 text-center text-muted">
+            <label for="city">Enter a location for weather information</label>
+            <input
+              type="text"
+              name="city"
+              class="form-control p-4" />
+          </form>
+
+          <div class="card shadow-lg rounded d-none">
+            <img
+              src="https://via.placeholder.com/400x300"
+              class="time card-img-top" />
+            <div class="icon bg-light mx-auto text-center">
+              <img
+                src=""
+                alt="" />
+            </div>
+            <div class="text-muted text-uppercase text-center details"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-7">
+        <h1 class="text-muted text-center my-5">Weather App</h1>
+        <div class="container-xl max-width px-auto mx-2">
+          <div class="row">
+            <div class="col">
+              <h4 class="dan0 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <h4 class="weather0 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <h4 class="temp0 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <div class="icon0 bg-light mx-auto text-center">
+                <img
+                  src=""
+                  alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h4 class="dan1 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <h4 class="weather1 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <h4 class="temp1 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <div class="icon1 bg-light mx-auto text-center">
+                <img
+                  src=""
+                  alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h4 class="dan2 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <h4 class="weather2 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <h4 class="temp2 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <div class="icon2 bg-light mx-auto text-center">
+                <img
+                  src=""
+                  alt="" />
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="row">
+            <div class="col">
+              <h4 class="dan3 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <h4 class="weather3 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <h4 class="temp3 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <div class="icon3 bg-light mx-auto text-center">
+                <img
+                  src=""
+                  alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h4 class="dan4 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <h4 class="weather4 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <h4 class="temp4 text-muted text-center my-3"></h4>
+            </div>
+
+            <div class="col">
+              <div class="icon4 bg-light mx-auto text-center">
+                <img
+                  src=""
+                  alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
