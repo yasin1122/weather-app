@@ -3,16 +3,25 @@ body {
   letter-spacing: 0.2em;
   font-size: 0.8em;
 }
+
 .container {
-  max-width: 400px;
+  max-width: 100%;
+  padding: 0 15px;
 }
 
 .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  margin: 0 -15px;
 }
+
 .col {
-  align-items: center;
-  align-content: flex-start;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  text-align: center;
 }
 
 .icon {
@@ -23,42 +32,35 @@ body {
   margin-bottom: -50px;
 }
 
-.icon0 {
-  position: relative;
-  border-radius: 50%;
-  width: 100px;
-  vertical-align: middle;
-  transform: scale(0.6);
-}
-
-.icon1 {
-  position: relative;
-  border-radius: 50%;
-  width: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  transform: scale(0.6);
-}
-
-.icon2 {
-  position: relative;
-  border-radius: 50%;
-  width: 100px;
-  margin: 10px;
-  transform: scale(0.6);
-}
-
-.icon3 {
-  position: relative;
-  border-radius: 50%;
-  width: 100px;
-  margin: 10px;
-  transform: scale(0.6);
-}
+.icon0,
+.icon1,
+.icon2,
+.icon3,
 .icon4 {
   position: relative;
   border-radius: 50%;
   width: 100px;
-  margin: 10px;
+  margin: 10px auto;
   transform: scale(0.6);
+}
+
+@media (min-width: 576px) {
+  .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
 }
